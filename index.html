@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yosh Muhandis</title>
+<meta name="description" content="Рабочий прототип платформы Yosh Muhandis: обучение, конкурсы, комиксы-миссии и магазин работ учеников.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#demo"><span class="logo-mark">YM</span>Yosh Muhandis</a>
+    <nav class="top-nav" aria-label="Разделы">
+      <a href="#demo">Демо</a>
+      <a href="#modules">Возможности</a>
+      <a href="#why">Отличия</a>
+      <a href="#plan">План</a>
+    </nav>
+    <button class="btn btn-dark" id="presentBtn" type="button">Режим презентации</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="demo">
+    <div class="wrap hero-in">
+      <div class="hero-text">
+        <span class="eyebrow">Рабочий прототип · демо-данные</span>
+        <h1>Учись, участвуй в конкурсах и продавай свои проекты в одном приложении</h1>
+        <p class="lead">Yosh Muhandis — платформа для школьников 10–17 лет. Уроки с проверкой задания, конкурсы с лигой, комиксы с миссиями, портфолио и магазин работ учеников. Родитель видит всё в своём кабинете и подтверждает каждый платёж.</p>
+
+        <div class="script" id="script">
+          <div class="script-head">
+            <strong>Сценарий показа</strong>
+            <span class="muted">нажмите шаг или стрелку →</span>
+          </div>
+          <ol class="steps">
+            <li><button type="button" data-step="0"><b>Лента</b> Работа одноклассницы → «Men ham qilaman»</button></li>
+            <li><button type="button" data-step="1"><b>Урок Python</b> Ученик пишет код, платформа проверяет</button></li>
+            <li><button type="button" data-step="2"><b>Конкурс</b> Регистрация и подтверждение родителя</button></li>
+            <li><button type="button" data-step="3"><b>Кабинет родителя</b> Оплата, лимит времени, отчёт</button></li>
+            <li><button type="button" data-step="4"><b>Комикс-миссия</b> Эпизод, задача, награда</button></li>
+            <li><button type="button" data-step="5"><b>Магазин</b> Работы учеников и покупки за tanga</button></li>
+            <li><button type="button" data-step="6"><b>Загрузка работы</b> Ученик выкладывает свой проект</button></li>
+            <li><button type="button" data-step="7"><b>Пригласи друга</b> Ссылка и бонусы</button></li>
+          </ol>
+          <button type="button" class="link-btn" id="resetBtn">Сбросить демо</button>
+        </div>
+      </div>
+
+      <div class="phone-col">
+        <div class="phone" id="phone" aria-label="Приложение Yosh Muhandis">
+          <div class="phone-notch" aria-hidden="true"></div>
+          <div id="app" class="ym"></div>
+        </div>
+        <p class="phone-cap">Всё кликабельно: прогресс сохраняется в этом браузере</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="modules">
+    <div class="wrap">
+      <h2>Что внутри</h2>
+      <div class="grid3">
+        <article class="card"><h3>Обучение</h3><p>Короткие уроки: теория, тест и практическое задание. Код на Python проверяется прямо в уроке.</p></article>
+        <article class="card"><h3>Конкурсы и лига</h3><p>Ежемесячные этапы по предметам, сезонный рейтинг, финал и сертификат с QR-кодом.</p></article>
+        <article class="card"><h3>Комиксы-миссии</h3><p>Свои персонажи, Zarina и робот Bolt. Каждый эпизод заканчивается задачей, без неё следующий не откроется.</p></article>
+        <article class="card"><h3>Портфолио</h3><p>Каждая работа, сертификат и достижение попадают в профиль, им можно поделиться.</p></article>
+        <article class="card"><h3>Магазин учеников</h3><p>Ученики продают свои проекты. Покупку подтверждает родитель, комиссия платформы 12%.</p></article>
+        <article class="card"><h3>Кабинет родителя</h3><p>Подтверждение оплат, лимит экранного времени, недельный отчёт. Личных сообщений между незнакомыми нет.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band-alt" id="why">
+    <div class="wrap">
+      <h2>Чем мы отличаемся</h2>
+      <p class="sub">Сейчас ученику нужны отдельные сервисы: AI-репетитор, видеокурсы, электронный дневник, Telegram-конкурсы. У нас путь ученика связан в одну цепочку.</p>
+      <div class="why">
+        <div class="why-row"><strong>Учёба → результат</strong><span>Урок заканчивается работой, работа идёт в портфолио, портфолио открывает конкурс или магазин.</span></div>
+        <div class="why-row"><strong>Работа друга как мотивация</strong><span>В ленте видно, что сделал одноклассник, и есть кнопка «Я тоже сделаю» с нужным уроком.</span></div>
+        <div class="why-row"><strong>Лига, а не разовый тест</strong><span>Сезонный рейтинг: эпизоды, этапы, финал и путь к международным конкурсам.</span></div>
+        <div class="why-row"><strong>Первый заработок ученика</strong><span>Магазин работ с безопасной оплатой через родителя.</span></div>
+        <div class="why-row"><strong>Родитель — участник, не надзиратель</strong><span>Он видит прогресс и подтверждает траты, но не читает каждое действие ребёнка.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="plan">
+    <div class="wrap">
+      <h2>План запуска</h2>
+      <ol class="timeline">
+        <li><span class="when">Ноябрь–декабрь 2026</span><strong>Подготовка</strong><span>Юрлицо, юрист, опрос интереса, этот прототип и тест на 30 учениках.</span></li>
+        <li><span class="when">Январь–апрель 2027</span><strong>MVP в Telegram Mini App</strong><span>Уроки, конкурсы, профиль, кабинет родителя, оплата через Click и Payme.</span></li>
+        <li><span class="when">Май–август 2027</span><strong>Магазин и комиксы</strong><span>Продажа работ учеников, модерация, новые эпизоды.</span></li>
+        <li><span class="when">Сентябрь–декабрь 2027</span><strong>Рост</strong><span>Мобильное приложение, лига по регионам, партнёрства со школами и кружками.</span></li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">Прототип для показа. Имена, цены и рейтинги демонстрационные. Реальной оплаты нет.</div>
+</footer>
+
+<div class="present-bar" id="presentBar">
+  <button type="button" class="btn" id="prevStep">← Назад</button>
+  <span id="stepLabel">Шаг 1 из 8</span>
+  <button type="button" class="btn" id="nextStep">Далее →</button>
+  <button type="button" class="btn btn-dark" id="exitPresent">Выйти</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
